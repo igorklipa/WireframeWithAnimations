@@ -1,0 +1,61 @@
+@import "animation";
+
+$tileDelay: 0.5s;
+
+.header {
+  &__logo {
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #808080;
+    opacity: 0.5;
+    @include fadeInMixin(0s, 0.5s);
+  }
+
+  &__tile {
+    width: 100%;
+    margin: 0 10px;
+    visibility: hidden;
+    position: relative;
+    min-height: 40px;
+    background-color: #808080;
+    border-radius: 15px;
+    box-sizing: border-box;
+    opacity: 0.5;
+  }
+
+  &__tile:first-child {
+    @include slideInMixin($tileDelay, 0.5s);
+  }
+
+  &__tile:nth-child(2) {
+    @include slideInMixin($tileDelay + 0.4s, 0.5s);
+  }
+
+  &__tile:nth-child(3) {
+    @include slideInMixin($tileDelay + 0.8s, 0.5s);
+  }
+
+  &__tile:nth-child(4) {
+    @include slideInMixin($tileDelay + 1.2s, 0.5s);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  header > .row {
+    flex-flow: row wrap;
+  }
+
+  .header__tile {
+    margin: 10px;
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 286px) {
+  .header__tile {
+    margin: 10px;
+    flex: 0 100%;
+  }
+}

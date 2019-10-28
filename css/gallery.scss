@@ -1,0 +1,62 @@
+@import "animation";
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    position: relative;
+    visibility: hidden;
+    margin: 20px 10px;
+
+    &__img-placeholder {
+      height: 280px;
+      width: 100%;
+      background-color: #808080;
+      opacity: 0.8;
+      border-radius: 15px;
+    }
+
+    &__title {
+      height: 30px;
+      width: 50%;
+      background-color: #808080;
+      opacity: 0.4;
+      border-radius: 15px;
+      margin: 5px 0;
+    }
+
+    &__description {
+      height: 30px;
+      width: 100%;
+      background-color: #808080;
+      opacity: 0.3;
+      border-radius: 15px;
+      margin: 5px 0;
+    }
+  }
+}
+
+#gallery-first-element {
+  opacity: 0;
+  visibility: visible;
+  @include fadeInFull(3.5s, 0.5s);
+}
+
+.gallery > .row-fluid:first-child > .gallery__item:not(:first-child) {
+  @include slideInMixin(4.0s, 0.5s);
+}
+
+.gallery > .row-fluid:not(:first-child) > .gallery__item {
+  @include slideInMixin(4.0s, 0.5s);
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery > .row-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__item {
+    width: 100%;
+  }
+}

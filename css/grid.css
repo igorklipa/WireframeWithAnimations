@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+.row__item {
+  width: 100%;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=grid.css.map */

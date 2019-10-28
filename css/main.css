@@ -1,0 +1,385 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInFull {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    visibility: hidden;
+    right: 100%;
+  }
+  to {
+    visibility: visible;
+    right: 0;
+  }
+}
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+.header__logo {
+  margin: 20px auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #808080;
+  opacity: 0.5;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.header__tile {
+  width: 100%;
+  margin: 0 10px;
+  visibility: hidden;
+  position: relative;
+  min-height: 40px;
+  background-color: #808080;
+  border-radius: 15px;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+.header__tile:first-child {
+  animation-name: slideIn;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.header__tile:nth-child(2) {
+  animation-name: slideIn;
+  animation-delay: 0.9s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.header__tile:nth-child(3) {
+  animation-name: slideIn;
+  animation-delay: 1.3s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.header__tile:nth-child(4) {
+  animation-name: slideIn;
+  animation-delay: 1.7s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 520px) {
+  header > .row, header > .row-fluid {
+    flex-flow: row wrap;
+  }
+
+  .header__tile {
+    margin: 10px;
+    flex-basis: 40%;
+  }
+}
+@media only screen and (max-width: 286px) {
+  .header__tile {
+    margin: 10px;
+    flex: 0 100%;
+  }
+}
+.row, .row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  margin: 0 5%;
+}
+
+.col__3 {
+  width: 33%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInFull {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    visibility: hidden;
+    right: 100%;
+  }
+  to {
+    visibility: visible;
+    right: 0;
+  }
+}
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 20px 0;
+  background-color: #808080;
+  max-height: 0;
+  height: 500px;
+  opacity: 0.2;
+  animation-name: expandHeight;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.slider__title {
+  height: 50px;
+  width: 150px;
+  background-color: #000000;
+  margin: 10px 0;
+  opacity: 0;
+  border-radius: 15px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.slider__description {
+  height: 30px;
+  width: 350px;
+  background-color: #000000;
+  opacity: 0;
+  border-radius: 15px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInFull {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    visibility: hidden;
+    right: 100%;
+  }
+  to {
+    visibility: visible;
+    right: 0;
+  }
+}
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallery__item {
+  position: relative;
+  visibility: hidden;
+  margin: 20px 10px;
+}
+.gallery__item__img-placeholder {
+  height: 280px;
+  width: 100%;
+  background-color: #808080;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+.gallery__item__title {
+  height: 30px;
+  width: 50%;
+  background-color: #808080;
+  opacity: 0.4;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+.gallery__item__description {
+  height: 30px;
+  width: 100%;
+  background-color: #808080;
+  opacity: 0.3;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+
+#gallery-first-element {
+  opacity: 0;
+  visibility: visible;
+  animation-name: fadeInFull;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.gallery > .row-fluid:first-child > .gallery__item:not(:first-child) {
+  animation-name: slideIn;
+  animation-delay: 4s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.gallery > .row-fluid:not(:first-child) > .gallery__item {
+  animation-name: slideIn;
+  animation-delay: 4s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery > .row-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery__item {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInFull {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    visibility: hidden;
+    right: 100%;
+  }
+  to {
+    visibility: visible;
+    right: 0;
+  }
+}
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

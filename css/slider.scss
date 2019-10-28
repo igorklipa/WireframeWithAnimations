@@ -1,0 +1,34 @@
+@import "animation";
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 20px 0;
+  background-color: #808080;
+  max-height: 0;
+  height: 500px;
+  opacity: 0.2;
+  @include expandHeightMixin(2s, 0.5s);
+
+  &__title {
+    height: 50px;
+    width: 150px;
+    background-color: #000000;
+    margin: 10px 0;
+    opacity: 0;
+    border-radius: 15px;
+    @include fadeInMixin(2.5s, 0.5s);
+  }
+
+  &__description {
+    height: 30px;
+    width: 350px;
+    background-color: #000000;
+    opacity: 0;
+    border-radius: 15px;
+    @include fadeInMixin(3.0s, 0.5s);
+  }
+}

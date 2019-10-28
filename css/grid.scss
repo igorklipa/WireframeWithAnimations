@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  @extend .row;
+  margin: 0 5%;
+}
+
+.col {
+  &__3 {
+    width: 33%;
+  }
+}
